@@ -1,6 +1,4 @@
-SELECT p.name,
-        p.address,
-        menu.pizza_name
+SELECT p.name
     FROM person p
            JOIN person_order po ON po.person_id = p.id
            JOIN menu ON po.menu_id = menu.id
